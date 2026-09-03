@@ -98,7 +98,7 @@ function job_precast(spell, spellMap, eventArgs)
 			if pet.isvalid and pet.hpp < 75 and abil_recasts[239] < latency and abil_recasts[149] < latency and spell.target.hpp > 44 then
 				eventArgs.cancel = true
 				windower.chat.input('/ja "Spirit Bond" <me>')
-				windower.chat.input:schedule(1.1,'/ja "Restoring Breath" '..spell.target.raw..'')
+				windower.chat.input:schedule(1.1,'/pet "Restoring Breath" '..spell.target.raw..'')
 				add_tick_delay(1.1)
 			end
 		end
