@@ -152,7 +152,7 @@ function job_post_precast(spell, spellMap, eventArgs)
 						equip(sets.MagicalMaxTP[spell.english] or sets.MagicalMaxTP)
 					else
 					end
-				elseif S{25,26}:contains(spell.skill) then
+				elseif S{'Archery','Marksmanship'}:contains(spell.skill) then
 					if wsacc:contains('Acc') and sets.RangedAccMaxTP then
 						equip(sets.RangedAccMaxTP[spell.english] or sets.RangedAccMaxTP)
 					elseif sets.RangedMaxTP then
@@ -170,7 +170,7 @@ function job_post_precast(spell, spellMap, eventArgs)
 			end
 		end
 		
-		if S{25,26}:contains(spell.skill) and not data.weaponskills.elemental:contains(spell.name) then
+		if S{'Archery','Marksmanship'}:contains(spell.skill) and not data.weaponskills.elemental:contains(spell.name) then
 			if state.TrueShotMode.value and sets.TrueShot and check_sweetspot(spell) then
 				equip(sets.TrueShot)
 			end

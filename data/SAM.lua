@@ -141,7 +141,7 @@ function job_post_precast(spell, spellMap, eventArgs)
 		if (WSset.ear1 == "Moonshade Earring" or WSset.ear2 == "Moonshade Earring") then
 			-- Replace Moonshade Earring if we're at cap TP
 			if get_effective_player_tp(spell, WSset) > 3200 then
-				if spell.skill == 25 then
+				if spell.skill == 'Archery' then
 					if wsacc:contains('Acc') and sets.RangedAccMaxTP then
 						equip(sets.RangedAccMaxTP)
 					elseif sets.RangedMaxTP then

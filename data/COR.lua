@@ -213,7 +213,7 @@ function job_post_precast(spell, spellMap, eventArgs)
 					elseif sets.MaxTP then
 						equip(sets.MaxTP[spell.english] or sets.MaxTP)
 					end
-				elseif spell.skill == 26 then
+				elseif spell.skill == 'Marksmanship' then
 					if wsacc:contains('Acc') and sets.RangedAccMaxTP then
 						equip(sets.RangedAccMaxTP[spell.english] or sets.RangedAccMaxTP)
 					elseif sets.RangedMaxTP then
