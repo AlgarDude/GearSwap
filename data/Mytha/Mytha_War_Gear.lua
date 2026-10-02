@@ -168,7 +168,7 @@ function init_gear_sets()
 	--Specialty WS set overwrites.
 	sets.AccWSMightyCharge = {}
 	sets.AccWSCharge = {}
-	sets.AccWSMightyCharge = {}
+	sets.AccWSMighty = {}
 	sets.WSMightyCharge = {}
 	sets.WSCharge = {}
 	sets.WSMighty = {}

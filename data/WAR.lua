@@ -191,11 +191,11 @@ function job_post_precast(spell, spellMap, eventArgs)
 		end
 		
 		if wsacc:contains('Acc') and not state.Buff['Sneak Attack'] then
-			if state.Buff.Charge and state.Buff['Mighty Strikes'] and sets.ACCWSMightyCharge then
-				equip(sets.ACCWSMightyCharge)
-			elseif state.Buff.Charge and sets.ACCWSCharge then
-				equip(sets.ACCWSCharge)
-			elseif state.Buff['Mighty Strikes'] and sets.ACCWSMighty then
+			if state.Buff.Charge and state.Buff['Mighty Strikes'] and sets.AccWSMightyCharge then
+				equip(sets.AccWSMightyCharge)
+			elseif state.Buff.Charge and sets.AccWSCharge then
+				equip(sets.AccWSCharge)
+			elseif state.Buff['Mighty Strikes'] and sets.AccWSMighty then
 				equip(sets.AccWSMighty)
 			end
 		else
